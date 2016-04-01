@@ -12,7 +12,7 @@ class Stack {
 
 	public void push(char item) throws FullStackException{
 		if(isFull()){
-			throw new FullStackException();
+			throw new FullStackException("Can't push. Stack is full.");
 		}
 		items[counter] = item;
 		counter++;
