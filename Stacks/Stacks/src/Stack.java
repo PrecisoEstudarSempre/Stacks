@@ -38,7 +38,7 @@ class Stack {
 	public char peek() throws EmptyStackException{
 		if(isEmpty()){
 			throw new EmptyStackException("Can't remove. Stack is empty.");
-		}
-		return items[counter];
+		}		
+		return items[counter-1];
 	}
 }
